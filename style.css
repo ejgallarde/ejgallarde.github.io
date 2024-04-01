@@ -40,6 +40,10 @@ nav ul li a {
     margin: 20px 0;
 }
 
+#about p {
+    font-size: 0.9em; /* Smaller font size for the About Me section */
+}
+
 article {
     background: #fff;
     margin: 20px 0;
