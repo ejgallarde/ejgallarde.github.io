@@ -15,7 +15,7 @@ header, footer {
 }
 
 .container {
-    max-width: 1200px; /* Adjust this value based on your preference */
+    max-width: 800px; /* Adjust this value based on your preference */
     margin: 0 auto; /* Centers the content */
     padding: 0 20px; /* Adds some padding on the sides */
 }
