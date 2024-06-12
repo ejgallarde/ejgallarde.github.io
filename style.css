@@ -1,84 +1,126 @@
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 10;
-    padding: 20;
-    background: #f4f4f4; /* Light grey background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    max-width: 800px; /* Adjust based on your preference */
-    margin: auto;
-    padding: 20px;
-    background-color: #fff; /* White background for content areas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-header, footer {
-    background-color: #333; /* Darker background for header/footer */
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
 header nav ul {
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
-a {
-    color: #007bff; /* A shade of blue for links */
+header nav ul li a {
+    color: white;
     text-decoration: none;
 }
 
-h1, h2 {
-    color: #333; /* Keeping headers dark for contrast */
+.main-container {
+    display: flex;
+    margin: 20px;
 }
 
-#about img {
-    max-width: 150px;
-    margin: 20px 0;
-}
-
-#about p, #contact p {
-    font-size: 0.9rem; /* Slightly smaller text for these sections */
-}
-
-.project-link {
-    display: inline-block;
-    background-color: #007bff; /* Matching link color */
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* Adjust article/project styling as needed */
-article {
-    margin-bottom: 20px;
+aside {
+    width: 25%;
+    margin-right: 20px;
     padding: 20px;
-    border: 1px solid #e1e1e1; /* Light border for definition */
-    border-radius: 5px;
-}
-
-/* Ensure images fit nicely */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-#contact {
-    background: #eee; /* Slightly darker background for contrast */
-    padding: 20px;
+    background-color: #f4f4f4;
     border-radius: 8px;
 }
 
-footer p {
-    margin: 10px 0;
+aside img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside p {
+    font-size: 14px; /* Adjust the font size as needed */
+    text-align: justify; /* Justify the text */
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.content h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    flex: 0 0 calc(50% - 20px); /* Two items per row */
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Border for clear separation */
+    padding: 10px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-sizing: border-box; /* Ensure proper sizing */
+}
+
+article a img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+article h3 {
+    margin-top: 10px;
+}
+
+.short-description,
+.full-description {
+    text-align: justify; /* Justify the text */
+}
+
+.short-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read-more,
+.read-less {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 12px; /* Different font-size */
+    font-family: 'Courier New', Courier, monospace; /* Different font */
+    margin-left: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
 }
